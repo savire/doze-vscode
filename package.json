@@ -1,0 +1,29 @@
+{
+  "name": "doze-language",
+  "displayName": "DoZe Language",
+  "description": "Add DoZe language code highlight",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.88.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [{
+      "id": "doze",
+      "aliases": ["DoZe", "doze"],
+      "extensions": [".dz"],
+      "configuration": "./language-configuration.json",
+      "icon": {
+        "light": "./DoZe.png",
+        "dark": "./DoZe.png"
+      }
+    }],
+    "grammars": [{
+      "language": "doze",
+      "scopeName": "source.dz",
+      "path": "./syntaxes/doze.tmLanguage.json"
+    }]
+  }
+}
